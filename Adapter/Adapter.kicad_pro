@@ -51,7 +51,7 @@
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
-          "border_hatch_pitch": 0.5,
+          "border_hatch_pitch": 0.1,
           "corner_radius": 0.0,
           "corner_smoothing": 0,
           "fill_mode": 0,
@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.15,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.1,
+          "thermal_relief_spoke_width": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -156,7 +156,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.7,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.09,
@@ -211,6 +211,8 @@
       ],
       "track_widths": [
         0.0,
+        0.09,
+        0.15,
         0.245
       ],
       "tuning_pattern_settings": {
@@ -233,10 +235,10 @@
         "single_track_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 1.0,
-          "min_amplitude": 0.2,
-          "single_sided": false,
-          "spacing": 0.6
+          "max_amplitude": 0.2,
+          "min_amplitude": 0.1,
+          "single_sided": true,
+          "spacing": 0.4
         }
       },
       "via_dimensions": [
@@ -498,8 +500,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "BGA153"
+    ],
+    "pinned_symbol_libs": [
+      "BGA153"
+    ]
   },
   "meta": {
     "filename": "Adapter.kicad_pro",
@@ -509,10 +515,10 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.09,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.0762,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.12,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -662,7 +668,7 @@
         "uuid": "1d16e929-1518-4942-9f3b-d438b470d81f"
       }
     ],
-    "used_designators": "#PWR1-17,U1,J2,C1-9",
+    "used_designators": "#PWR1-21,U1,J2-3,C1-9",
     "variants": []
   },
   "sheets": [
@@ -672,7 +678,7 @@
     ]
   ],
   "text_variables": {
-    "VERSION": "V1.0"
+    "VERSION": "V1.1"
   },
   "tuning_profiles": {
     "meta": {
