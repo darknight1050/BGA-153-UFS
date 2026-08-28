@@ -668,7 +668,7 @@
         "uuid": "1d16e929-1518-4942-9f3b-d438b470d81f"
       }
     ],
-    "used_designators": "#PWR1-21,U1,J2-3,C1-9",
+    "used_designators": "#PWR1-26,U1,#FLG1-4,J2-3,C1-9",
     "variants": []
   },
   "sheets": [
@@ -678,7 +678,7 @@
     ]
   ],
   "text_variables": {
-    "VERSION": "V1.1"
+    "VERSION": "V1.2"
   },
   "tuning_profiles": {
     "meta": {
